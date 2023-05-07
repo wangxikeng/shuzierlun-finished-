@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'microsoft yahei';
+    font-size: 1.2rem;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page_head {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #ec4141;
+
+}
+
+.perdetail {
+    position: absolute;
+    right: 282px;
+    bottom: 14px;
+    background-color: #e3e3e5;
+
+}
+
+.perdetail_cover {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.perdetail_cover img {
+    width: 40px;
+    height: 40px;
+     border-radius: 50%; 
+}
+
+.perdetail_list_itm li,
+.perdetail_list_itm a {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    color: #cccccc;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.perdetail_cover:hover .perdetail_list {
+    display: block;
+}
+
+.perdetail_list_itm li:hover {
+    background-color: #353535;
+    color: #ffffff;
+}
+
+.perdetail_list {
+    position: absolute;
+    top: 38px;
+    right: -43px;
+    width: 158px;
+    background: #2b2b2b;
+    border: 1px solid #202020;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.50);
+    border-radius: 4px;
+    z-index: 200;
+}
+
+/* 播放器部分-------------------------------------- */
+.page_playbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #eeeeee;
+    border: 1px solid #e0e0e0;
+}
+
+.page_playbar .playbar_btns {
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.page_playbar .playbar_btns .btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ec4141;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 18px;
+}
+
+.playbar_process {
+    position: relative;
+    left: 200px;
+    width: 830px;
+    height: 100%;
+}
+
+.history_song {
+    position: relative;
+    left: 96%;
+    bottom: 13px;
+    width: 200px;
+    height: 200px;
+}
+
+.history_song_txt {
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    width: 400px;
+    height: 340px;
+    background-color: #1d1f1f;
+    overflow-y: scroll;
+}
+
+.clock_btn a {
+    position: absolute;
+    color: #ec4141;
+    left: 96%;
+    top: 0;
+}
+
+.history_song_txt span {
+    display: inline-block;
+    width: 400px;
+    font-size: 14px;
+    color: #eeeeee;
+    background-color: #1d1f1f;
+}
+
+.history_song_txt_list td {
+    color: #5f5f5f;
+    font-size: 10px;
+    padding: 10px;
+    width: 50%;
+    line-height: 10px;
+
+}
+
+.history_song_txt_list tr:hover td {
+    color: #fff;
+}
+
+.history_song_txt_list tr:hover {
+    background-color: #111313;
+}
+
+.play_process {
+    position: relative;
+    top: 50%;
+    left: 0;
+    width: 80%;
+    height: 10px;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    background-color: #C4C4C4;
+    border-radius: 5px;
+}
+
+.process_cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #A2A2A2;
+}
+
+.process_current {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ec4141;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 100%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffff;
+    box-shadow: 3px 2px 5px black;
+    cursor: pointer;
+}
+
+.play_process .time_star {
+    position: absolute;
+    top: 50%;
+    left: -9%;
+    transform: translateY(-50%);
+}
+
+.play_process .time_end {
+    position: absolute;
+    top: 50%;
+    right: -9%;
+    transform: translateY(-50%);
+}
+
+
+.container {
+    position: relative;
+}
+
+.page_menu {
+    position: absolute;
+    left: 0;
+    height: 700px;
+    width: 220px;
+    background-color: #eeeeee;
+}
+
+.content {
+    position: absolute;
+    height: 780px;
+    width: 100%;
+    left: 220px;
+}
+
+.content>.content_txt {
+    height: 780;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.playlist_info {
+    position: absolute;
+    height: 270px;
+    width: 100%;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+
+.content .playlist_tab {
+    position: relative;
+    left: 0;
+    top: 300px;
+}
+
+.content .playlist_tab .tab_btns {
+    padding: 0 40px;
+    border-bottom: 1px solid #ec4141;
+}
+
+.content .playlist_tab .tab_btns .btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    margin: 0 3px;
+    border: 1px solid gray;
+    border-bottom: 0;
+}
+
+.content .playlist_tab .tab_btns .active {
+    background-color: #ec4141;
+    color: #ffff;
+}
+
+.tab_musiclist table {
+    width: 70%;
+    text-align: left;
+    vertical-align: middle;
+
+}
+
+.tab_musiclist table th,
+.tab_musiclist table td {
+    padding-left: 15px;
+    font-size: 18px;
+    height: 2rem;
+    max-width: 200px;
+}
+
+.tab_musiclist table th {
+    border-left: 1px solid #A2A2A2;
+}
+
+.tab_musiclist table tbody tr:nth-of-type(2n) {
+    background-color: #f5f5f7;
+}
+
+.tab_musiclist table tbody tr:hover {
+    background-color: #e3e3e5;
+}
+
+.content_txt>.playlist_info>.info_poster {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.content_txt>.playlist_info>.info_poster img {
+    width: 100%;
+    height: 100%;
+}
+
+.content_txt>.info_detail {
+    position: absolute;
+    top: 30px;
+    left: 333px;
+    width: 100%;
+    height: 200px;
+}
+
+
+.smallwindow {
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    height: 60px;
+    width: 200px;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+
+.menlist {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.menlist>.list>.title {
+    padding: 10px;
+    color: #918e88;
+}
+
+.menlist>.list>.btngroups>.btn {
+    padding: 20px;
+    color: #918e88;
+}
+
+.smallwindow>.poster {
+    float: left;
+    width: 30%;
+    height: 100px;
+}
+
+.smallwindow>.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.smallwindow>.infor {
+    float: left;
+    width: 60%;
+    height: 100px;
+}
+
+.smallwindow>.infor>p {
+    margin: 5px 10px;
+    font-size: 10px;
+}
+
+.smallwindow>.btngroups {
+    float: left;
+    height: 100px;
+}
+
+.detail_name .tag {
+    color: #fff;
+    background-color: #ec4141;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.detail_name .name {
+    font-size: 25px;
+}
+
+.info_detail .detail_create span {
+    margin-right: 10px;
+}
+
+.info_detail .detail_create {
+    margin: 10px 0;
+}
+
+.info_detail .detail_btn span {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.infolist {
+    height: 350px;
+    overflow-y: auto;
+}

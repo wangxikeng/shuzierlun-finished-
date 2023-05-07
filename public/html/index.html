@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/index.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/recommendsonglist.js"></script>
+
+<body>
+    <!-- 板头 -->
+    <div class="nav">
+        <div class="container">
+            <a class=nav_logo href="#">
+            </a>
+            <ul class="nav_txt">
+                <li class='nav_txt_menu'><a href="#">首页</a></li>
+                <li class='nav_txt_menu' id='ranklist'><a href="../html/ranklist.html">排行榜</a></li>
+                <li class='nav_txt_menu' id="singer"><a href="../html/singer.html">歌手</a></li>
+                <li class='nav_txt_menu' id="person_center"><a href="../html/person_center.html">个人中心</a></li>
+            </ul>
+            <div class="nav_search">
+                <span class="nav_search_s">
+                    <form action="">
+                        <input id='search' type="text" placeholder="音乐/视频/电台/用户">
+                    </form>
+                </span>
+            </div>
+            <div class="nav_login">
+                <a href="#">登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图部分 -->
+    <div class="container" id="container">
+        <div class="banner">
+            <div class="imgshow">
+                <a href="javascript:"><img src="../pic/{no.001} (1).jpg" alt=""></a>
+                <a href="javascript:"><img src="../pic/{no.001} (2).jpg" alt=""></a>
+                <a href="javascript:"><img src="../pic/{no.001} (3).jpg" alt=""></a>
+                <a href="javascript:"><img src="../pic/{no.001} (4).jpg" alt=""></a>
+                <a href="javascript:"><img src="../pic/{no.001}.jpg" alt=""></a>
+            </div>
+            <div class="points">
+                <a href="javascript:" class="show"></a>
+                <a href="javascript:" class="hidden"></a>
+                <a href="javascript:" class="hidden"></a>
+                <a href="javascript:" class="hidden"></a>
+                <a href="javascript:" class="hidden"></a>
+            </div>
+            <a href="javascript:" class="btn btn_left"></a>
+            <a href="javascript:" class="btn btn_right"></a>
+        </div>
+    </div>
+    <!-- 歌单 -->
+    <div class="container song_list_2" id="song_list_2">
+        <div class="title">
+            <h4>热门推荐</h4>
+        </div>
+        <div class="song_list-body">
+            <ul class="song_content" id="song_content">
+            </ul>
+        </div>
+    </div>
+    <div class="main_d" id="main_d" style="display: none;">
+        <div class="mod_data_d" id="mod_data_d">
+            <span class="mod_data_cover_d" id="mod_data_cover_d">
+                <img class='data__photo' src="../pic/{no.001} (5).jpg" alt="">
+            </span>
+            <div class="data__cont_d">
+                <div class="data__name" id="data__name">
+                    <h1 class="data__name_txt">
+                        华语| 原住民之歌
+                    </h1>
+                </div>
+                <ul class="data__info">
+                    <li class="data_info__item">
+                        <div class="data_tag_box" id="data_tag_box">
+                            标签:
+                            <span>
+                                <a href="javascript:" class="data_info__tags">
+                                    国语
+                                </a>
+                                <a href="javascript:" class="data_info__tags">
+                                    民谣
+                                </a>
+                            </span>
+                        </div>
+
+                    </li>
+                    <li class="data_info__item">
+                        播放量：5.2万
+                    </li>
+                    <li class="data_info__item">
+                        收藏量：598
+                    </li>
+                </ul>
+                <div class="data__actions_d">
+                    <a class="mod_btn_green_d">
+                        <span class="btn__txt">
+                            播放全部
+                        </span>
+                    </a>
+                    <a class="mod_btn_d">
+                        <span class="btn__txt">
+                            收藏
+                        </span>
+                    </a>
+                    <a class="mod_btn_d">
+                        <span class="btn__txt">
+                            评论
+                        </span>
+                    </a>
+                    <a class="mod_btn_d">
+                        <span class="btn__txt">
+                            更多
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="detail_layout">
+            <div class="detail_layout__main">
+                <audio src="" controls id="audio_d"></audio>
+                <div class="mod_songlist_d">
+                    <ul class="songlist__header_d">
+                        <li class="songlist__header_name_d">歌曲</li>
+                        <li class="songlist__header_author_d">歌手</li>
+                        <li class="songlist__header_album_d">专辑</li>
+                        <li class="songlist__header_time_d">时长</li>
+                    </ul>
+                    <ul class="songlist__list_d" id="songlist__list_d">
+                    </ul>
+                </div>
+            </div>
+            <div class="detail_layout__other">
+                <div class="mod_about">
+                    <h3 class="about__tit">简介</h3>
+                    <div class="about__cont" id="about__cont">
+                        <p>远离都市的喧嚣，听听山的呐喊、海的呼吸。</p>
+                    </div>
+                    <a class="about__more">[更多]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type='text/javascript' src="../js/banner.js"></script>
+
+</html>

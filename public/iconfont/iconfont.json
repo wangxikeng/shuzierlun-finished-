@@ -1,0 +1,86 @@
+{
+  "id": "3949739",
+  "name": "1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7588028",
+      "name": "24gl-videoCamera",
+      "font_class": "24gl-videoCamera",
+      "unicode": "e9f0",
+      "unicode_decimal": 59888
+    },
+    {
+      "icon_id": "2076196",
+      "name": "赞",
+      "font_class": "zan",
+      "unicode": "e870",
+      "unicode_decimal": 59504
+    },
+    {
+      "icon_id": "4327953",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "1254",
+      "name": "喜爱",
+      "font_class": "xiai",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "688097",
+      "name": "上一首 上一个",
+      "font_class": "shangyishoushangyige",
+      "unicode": "e78a",
+      "unicode_decimal": 59274
+    },
+    {
+      "icon_id": "688128",
+      "name": "下一个 下一首",
+      "font_class": "xiayigexiayishou",
+      "unicode": "e7a5",
+      "unicode_decimal": 59301
+    },
+    {
+      "icon_id": "2674483",
+      "name": "暂停",
+      "font_class": "zanting1",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "6229721",
+      "name": "叉号",
+      "font_class": "chahao",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "2076218",
+      "name": "播放2",
+      "font_class": "bofang",
+      "unicode": "e87c",
+      "unicode_decimal": 59516
+    },
+    {
+      "icon_id": "35043402",
+      "name": "next",
+      "font_class": "next",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "35043451",
+      "name": "previous",
+      "font_class": "previous",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    }
+  ]
+}

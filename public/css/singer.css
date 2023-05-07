@@ -1,0 +1,114 @@
+.songer_poster {
+    position: relative;
+    width: 100%;
+    height: 376px;
+    background: url(../pic/poster.jpg) 50% 0 repeat-x;
+    overflow: hidden;
+}
+
+.songer_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.songer_inner_title {
+    width: 494px;
+    height: 60px;
+    font-size: 50px;
+    color: aliceblue;
+    margin-top: 103px;
+    background-position: 0 0;
+}
+
+.main_b {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.songer_tag {
+    background-color: #fbfbfd;
+    padding: 34px 0 17px 40px;
+    margin: 30px 0 20px;
+}
+
+.songer_tag_list {
+    padding-bottom: 3px;
+    height: auto;
+    zoom: 1;
+    clear: both;
+    overflow: hidden;
+}
+
+.songer_tag_list_itm {
+    float: left;
+    color: black;
+    height: 26px;
+    line-height: 27px;
+    overflow: hidden;
+    padding: 0 8px;
+    margin: 0 12px 14px 0;
+}
+
+.songer_tag_list_itm:hover {
+    color: red;
+}
+
+.songer_tag_list_all {
+    margin-right: 28px;
+}
+
+.songer_tag_list_select {
+    background-color: red;
+    color: #fff;
+}
+
+.songer_list_all {
+    overflow: hidden;
+    text-align: center;
+}
+
+.songer_list_lists {
+    margin-right: -20px;
+    overflow: hidden;
+    margin-bottom: 4px
+}
+
+.songer_list_lists_itm {
+    float: left;
+    width: 20%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.songer_list_itm_box {
+    position: relative;
+    margin-right: 20px;
+    background-color: #fbfbfd;
+    min-height: 195px;
+    padding: 25px 0;
+    overflow: hidden;
+}
+
+.songer_list_itm_imgcover {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 126px;
+}
+
+.songer_list_itm_imgprc {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 126px;
+}
+
+.songer_list_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

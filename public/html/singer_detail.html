@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/singer_detail.js"></script>
+    <link rel="stylesheet" href="../css/singer_detail.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/mv.css">
+    <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="container">
+            <a class=nav_logo href="#">
+            </a>
+            <ul class="nav_txt">
+                <li class='nav_txt_menu'><a href="../html/index.html">首页</a></li>
+                <li class='nav_txt_menu' id='ranklist'><a href="../html/ranklist.html">排行榜</a></li>
+                <li class='nav_txt_menu' id="singer"><a href="../html/singer.html">歌手</a></li>
+                <li class='nav_txt_menu' id="person_center"><a href="../html/person_center.html">个人中心</a></li>
+            </ul>
+            <div class="nav_search">
+                <span class="nav_search_s">
+                    <form action="">
+                        <input id='search' type="text" placeholder="音乐/视频/电台/用户">
+                    </form>
+                </span>
+            </div>
+            <div class="nav_login">
+                <a href="#">登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="mod_mv" id='mod_mv' style="display: none;">
+        <div class="section_inner">
+            <div class="mv__player">
+                <div class="video_player_box" style="width: 1200px;
+            height: 675px;">
+                    <div class="video_player"></div>
+                    <video id="video_player__source" class="video_player__source" src="../pic/video.mp4" autoplay="true" Controls="'true"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_c">
+        <div class="singer_data">
+            <a class="singer_data_cover" href="javascript:">
+                <img class="singer_data_img" src="../pic/zhangjie.jpg" alt="">
+            </a>
+            <div class="singer_data_count">
+                <div class="singer_data_name">
+                    <h1 class="singer_data_name_txt">张杰</h1>
+                </div>
+                <div class="singer_data_desc">
+                    <div class="singer_data_desc_txt">
+                        "张杰，华语LIVE王。
+                        出道16年来，发行了14张专辑，200多首高品质音乐作品，40多首OST金曲，拥有众多被广为传唱的歌曲。近年来，他创新运用MIX-POP曲风，开辟音乐发展新征程。
+                        170多个音乐奖项，让他实现内地音乐奖项大满贯。2010年，获得韩国Mnet亚洲音乐盛典“亚洲之星”大奖；2014年，获得第42届全美音乐奖“年度国际艺人大奖”，成为内地首位获得该奖项的歌手。
+                        至今为止，举办了 61场大型演唱会，巡演足迹踏过海内外30余座城市，累计130万人观看。2018、2019连续两年打破鸟巢单场演唱会票房纪录。"
+                    </div>
+                </div>
+                <div class="singer_data_actions">
+                    <a class="btn_green">
+                        播放歌手热门歌曲
+                    </a>
+                    <a class="singer_data_actions_btn">
+                        关注
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="singer_part">
+            <div class="part__hd">
+                <h2 class="part__tit">热门歌曲</h2>
+            </div>
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">
+                        歌曲
+                    </li>
+                    <li class="songlist__header_album">
+                        专辑
+                    </li>
+                    <li class="songlist__header_time">
+                        时长
+                    </li>
+                </ul>
+                <ul class="songlist__list" id="songlist__list">
+                    <!-- <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item songlist__item_even">
+                            <div class="songlist__number">
+                                1
+                            </div>
+                            <div class="songlist__songname">
+                                <span class="songlist__songname_txt">
+                                    <a href="javascript:">晴天</a>
+                                </span>
+                            </div>
+                            <div class="songlist__time">
+                                04:56
+                            </div>
+                            <div class="songlist__album">
+                                叶惠子
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="mod_part">
+            <div class="part__hd">
+                <h2 class="part__tit">MV</h2>
+            </div>
+            <ul class="mv_list__list" id='mv_list__list'>
+
+            </ul>
+        </div>
+    </div>
+    <audio src="" id="audio_c" controls></audio>
+</body>
+
+</html>

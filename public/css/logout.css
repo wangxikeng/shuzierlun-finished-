@@ -1,0 +1,64 @@
+.mod_profile_unlogin {
+    height: 622px;
+    background: url(../pic/qq.jpg) 50% no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.section_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.profile_unlogin__tit {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    -webkit-transition-delay: .1s;
+    -webkit-transition: all 1s;
+    margin-top: 210px;
+    width: 735px;
+    height: 64px;
+    background-position: 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    color: #fff;
+    font-weight: none;
+}
+
+.mod_btn_green {
+    display: block;
+    font-size: 20px;
+    height: 48px;
+    ;
+    width: 128px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid red;
+    background-color: red;
+    color: black;
+    -webkit-transform: translate(0);
+    -webkit-transition-delay: .3s;
+    -webkit-transition: all 1s;
+    line-height: 49px;
+    border-radius: 2px;
+    padding: 0 23px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.profile_unlogin__desc {
+    width: 345px;
+    height: 30px;
+    background-position: 0 -70px;
+    margin-top: 30px;
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile_unlogin__desc h3 {
+    color: #fff;
+    font-size: 25px;
+}

@@ -1,0 +1,287 @@
+body {
+    color: #000;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: poppin, Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+    font-family: Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif, 9;
+}
+
+.container_a {
+    position: relative;
+    width: 1200px;
+    padding: 60px;
+}
+
+.top_list {
+    line-height: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+.top_list_title {
+    float: left;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.top_list span {
+    margin-left: 20px;
+}
+
+.toplist_tool {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+.toplist_btn {
+    border-radius: 2px;
+    border: 1px solid #c9c9c9;
+    color: #000000;
+    font-size: 14px;
+    margin-right: 6px;
+    padding: 0 23px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.btn_red {
+    border: 1px solid red;
+    background-color: RED;
+    color: #fff;
+}
+
+.toplist_songlist {
+    margin-bottom: 60px;
+    font-size: 14px;
+    overflow: hidden
+}
+
+.songlist_header {
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, .01);
+    color: #999;
+}
+
+.songlist_header_name {
+    float: left;
+    width: 72%;
+    position: relative;
+    white-space: normal;
+}
+
+.songlist_header_songer {
+    float: left;
+    padding-left: 15px;
+    width: 25.5%;
+    box-sizing: border-box;
+}
+
+.songlist_header_time {
+    position: absolute;
+    top: 191;
+    right: 64px;
+    width: 50px;
+}
+
+.songlist_list {
+    height: 80px;
+    overflow: hidden;
+    clear: both;
+}
+
+.songlist_songname {
+    float: left;
+    width: 72%;
+    position: relative;
+    white-space: normal;
+}
+
+.songlist_songer {
+    float: left;
+    padding-left: 15px;
+    width: 25.5%;
+    box-sizing: border-box;
+}
+
+.songlist_time_a {
+    display: block;
+    position: absolute;
+    top: 191;
+    right: 64px;
+    width: 50px;
+}
+
+.songlist_itm {
+    height: 80px;
+}
+
+audio {
+    position: fixed;
+    bottom: 0;
+}
+
+/* .toplist_songlist_itm li:nth-of-type(2n){
+background-color: #999;
+} */
+.toplist_songlist_itm li:hover {
+    color: red;
+}
+
+.part__hd {
+    overflow: hidden;
+    height: 60px;
+}
+
+.part__tit {
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 58px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+
+}
+
+.comment__input {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.comment__textarea {
+    position: relative;
+    overflow: hidden;
+    min-height: 102px;
+    border: 1px solid #ececec;
+    background-color: #f5f5f5;
+}
+
+.comment__textarea_inner {
+    margin: 10px 14px 25px;
+}
+
+.comment__tool {
+    position: absolute;
+    bottom: 10px;
+    right: -5px;
+}
+
+.comment__textarea_default {
+    width: 100%;
+    border: none;
+    min-height: 66px;
+    resize: none;
+    outline: none;
+    background: transparent;
+}
+
+.mod_btn_green {
+    width: 80px;
+    line-height: 27px;
+    height: 27px;
+    text-align: center;
+    padding: 0;
+    margin-right: 5px;
+    border: 1px solid red;
+    background-color: red;
+    color: #fff;
+}
+
+.mod_btn_green a {
+    margin-right: 5px;
+}
+
+.mod_hot_comment {
+    margin-bottom: 16px;
+}
+
+.comment_type__title {
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    border-color: #ededed;
+}
+
+.comment_type__title h2 {
+    font-weight: 400;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.comment__list {
+    padding-bottom: 14px;
+}
+
+.comment__list_item {
+    position: relative;
+    padding: 15px 0 15px 56px;
+    zoom: 1;
+    border-bottom: 1px solid;
+    border-color: #ededed;
+}
+
+.comment__avatar {
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 38px;
+    height: 38px;
+}
+
+.comment_list__avatar_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 999px
+}
+
+.comment__title {
+    font-weight: 400;
+    overflow: hidden;
+    height: 26px;
+    line-height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.c_tx_thin {
+    color: #999;
+}
+
+.comment__text {
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.comment__opt {
+    line-height: 24px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.comment__zan {
+    margin-right: 20px;
+}
+
+.icon_comment {
+    background-position: -25px -25px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    overflow: hidden;
+    vertical-align: -3px;
+}

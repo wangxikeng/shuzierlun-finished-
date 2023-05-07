@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/research.css">
+    <script src="../js/research.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body>
+    <div class="mod_search">
+        <div class="mod_search_input">
+            <input type="text" id="keyword" class="search_input__input">
+            <button id="search-button" class="search_input__btn">搜索</button>
+        </div>
+
+    </div>
+    <!-- 搜素列表 -->
+    <div class="main">
+        <div class="main__inner">
+            <div class="mod_tab">
+                <a class="mod_tab__item mod_tab__current">单曲</a>
+                <a class="mod_tab__item">专辑</a>
+                <a class="mod_tab__item">MV</a>
+                <a class="mod_tab__item">歌单</a>
+                <a class="mod_tab__item">用户</a>
+                <a class="mod_tab__item">歌词</a>
+            </div>
+            <div class="search-list mod_songlist ">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_album">专辑</li>
+                </ul>
+                <ul id="result-list" class="songlist__list">                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 音频 -->
+    <audio src="" id="audio" controls></audio>
+
+
+</body>
+
+</html>

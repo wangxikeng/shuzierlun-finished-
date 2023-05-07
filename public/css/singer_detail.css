@@ -1,0 +1,353 @@
+.main_c {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.singer_data {
+    position: relative;
+    height: 250px;
+    padding-left: 305px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.singer_data_cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.singer_data_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+.singer_data_count {
+    padding-top: 31px;
+}
+
+.singer_data_name {
+    height: 50px;
+    overflow: hidden;
+    line-height: 50px;
+    color: #000;
+    font-size: 14px;
+}
+
+.singer_data_name_txt {
+    float: left;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    margin-right: 10px;
+}
+
+.singer_data_desc {
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 4px
+}
+
+.singer_data_desc_txt {
+    float: left;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 2px;
+}
+
+.singer_data_actions {
+    bottom: 30px;
+    position: absolute;
+    font-size: 0;
+}
+
+.btn_green {
+    min-width: 122px;
+    text-align: center;
+    padding: 0 18px;
+    border: 1px solid red;
+    background-color: red;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-right: 6px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.singer_data_actions_btn {
+    border-radius: 2px;
+    font-size: 14px;
+    margin-right: 6px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #c9c9c9;
+    color: #000;
+    min-width: 122px;
+    text-align: center;
+    padding: 0 18px;
+}
+
+.singer_part {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.part__hd {
+    overflow: hidden;
+    height: 60px;
+}
+
+.part__tit {
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 58px;
+    font-family: 微软雅黑;
+}
+
+.mod_songlist {
+    padding-bottom: 60px;
+    font-size: 14px;
+    overflow: hidden;
+    margin: 11px -30px 10px 0;
+}
+
+.songlist__header {
+    background-color: #fbfbfd;
+    height: 50px;
+    line-height: 50px;
+    color: #999;
+    position: relative;
+    padding-left: 46px;
+    padding-right: 95px;
+}
+
+.songlist__header_name {
+    float: left;
+    width: 47.685185%;
+    position: relative;
+    white-space: normal
+}
+
+.songlist__header_album {
+    float: left;
+    padding-left: 15px;
+    width: 25.5%;
+    box-sizing: border-box;
+}
+
+.songlist__header_time {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    width: 50px;
+}
+
+.songlist__list {
+    overflow: hidden;
+    clear: both;
+}
+
+.songlist__item {
+    position: relative;
+    padding-left: 46px;
+    padding-right: 95px;
+    clear: both;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.songlist__item_even {
+    background-color: rgba(0, 0, 0, .01);
+}
+
+.songlist__number {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: #999;
+    width: 36px;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.songlist__songname {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    width: 47.685185%;
+    position: relative;
+    white-space: normal;
+
+}
+
+.songlist__songname_txt {
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 8px;
+    white-space: nowrap;
+    font-size: 14px;
+    max-width: 62%;
+    box-sizing: border-box;
+
+}
+
+.songlist__list li:nth-of-type(2n) {
+    background-color: #fff;
+}
+
+.songlist__songname_txt a {
+    color: #000;
+}
+
+.songlist__songname_txt a:hover {
+    color: red;
+}
+
+.songlist__time {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #999;
+}
+
+.songlist__album {
+    float: left;
+    padding-left: 15px;
+    width: 25.5%;
+    box-sizing: border-box;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+audio {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.mod_part {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.part__hd {
+    overflow: hidden;
+    height: 60px
+}
+
+.part__tit {
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 58px;
+    font-family: 微软雅黑;
+}
+
+.mv_list__list {
+    margin-right: -20px;
+    zoom: 1;
+}
+
+.mv_list__item {
+    padding-bottom: 0px;
+    width: 20%;
+    float: left;
+    overflow: hidden;
+}
+
+.mv_list__item_box {
+    position: relative;
+    margin-right: 20px;
+}
+
+.mv_list__cover {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-top: 56.5476%;
+    margin-bottom: 15px;
+    zoom: 1;
+}
+
+.mv_list__pic {
+    transform: scale(1);
+    transition: transform .75s;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mv_list__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    zoom: 1;
+}
+
+.mv_list__info {
+    color: #999;
+    line-height: 18px;
+    height: 20px;
+}
+
+.mv_list__listen {
+    margin-right: 10px;
+}
+
+.mv_list__listen_icon {
+    display: inline-block;
+    width: 19px;
+    height: 12px;
+    background-position: -180px -20px;
+    margin-right: 5px;
+    vertical-align: -1px;
+}
+
+.mv_list__item:hover .mv_list__item_box h3 a {
+    text-decoration: overline;
+}
